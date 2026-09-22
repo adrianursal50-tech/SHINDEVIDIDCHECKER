@@ -43,7 +43,7 @@ import engine
 from engine import check_device_ban_silent, lookup_player_data
 
 # ── CONFIG ─────────────────────────────────────────────────────────────
-BOT_TOKEN        = os.environ.get("BOT_TOKEN", "8702549007:AAHe3d-RSBaYs4wX4D4x4rkLpevipByEPqs").strip()
+BOT_TOKEN        = os.environ.get("BOT_TOKEN", "8702549007:AAH6vD0vi1IsvIP5RCxhBozIdvGPJnEtnKk").strip()
 OWNER_ID         = int(os.environ.get("OWNER_ID", "8621676055"))
 DB_PATH          = os.environ.get("DB_PATH", "potato_bot.db")
 BULK_WORKERS     = int(os.environ.get("BULK_WORKERS", "20"))
