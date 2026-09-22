@@ -3,3 +3,4 @@ pycryptodome==3.21.0
 zstandard==0.23.0
 requests==2.32.3
 aiogram
+colorama
