@@ -37,7 +37,7 @@ from telegram.constants import ParseMode
 # CONFIG
 # ────────────────────────────────────────────────────────────────
 
-BOT_TOKEN   = "8702549007:AAH6vD0vi1IsvIP5RCxhBozIdvGPJnEtnKk"
+BOT_TOKEN   = "8702549007:AAGNiI_-iZyzzKE4OHafSwgl3SjR0Ht3VRM"
 OWNER_ID    = 8621676055
 BOT_NAME    = "Premium DevID Seker"
 BOT_VERSION = "1.2"
