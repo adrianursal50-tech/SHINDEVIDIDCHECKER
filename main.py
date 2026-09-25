@@ -41,7 +41,7 @@ from telegram.ext import (
 # CONFIG
 # ═══════════════════════════════════════════════════════════════════
 
-BOT_TOKEN   = os.environ.get("DRAKVEX_BOT_TOKEN", "8702549007:AAE9KjW1MmPxdcZtyi8IozCQnEQrZ3uaNYM")
+BOT_TOKEN   = os.environ.get("DRAKVEX_BOT_TOKEN", "8702549007:AAHxNCGdtyEdGihy7FfoXhNTtx3mh1UN4W0")
 DB_PATH     = os.environ.get("DRAKVEX_DB", "drakvex.db")
 
 DEFAULT_ADMINS = "8621676055"
