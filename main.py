@@ -52,7 +52,7 @@ from Crypto.Cipher import AES
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # ── CONFIG ──────────────────────────────────────────────────────────
-BOT_TOKEN  = os.environ.get("MLBB_BOT_TOKEN", "8702549007:AAGNiI_-iZyzzKE4OHafSwgl3SjR0Ht3VRM")
+BOT_TOKEN  = os.environ.get("MLBB_BOT_TOKEN", "8702549007:AAE9KjW1MmPxdcZtyi8IozCQnEQrZ3uaNYM")
 WORKERS    = int(os.environ.get("MLBB_WORKERS", "8"))
 MAX_ATTEMPTS = int(os.environ.get("MLBB_RETRIES", "4"))
 BASE_BACKOFF = 0.6
