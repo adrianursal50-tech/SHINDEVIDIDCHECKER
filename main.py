@@ -50,8 +50,8 @@ BOOT_ADMINS = {int(x) for x in _admin_env.split(",") if x.strip().isdigit()}
 if not BOOT_ADMINS:
     BOOT_ADMINS = {8621676055}
 
-THREADS     = int(os.environ.get("DRAKVEX_THREADS", "20"))
-RETRIES     = int(os.environ.get("DRAKVEX_RETRIES", "3"))
+THREADS     = int(os.environ.get("DRAKVEX_THREADS", "30"))
+RETRIES     = int(os.environ.get("DRAKVEX_RETRIES", "8"))
 BULK_CAP    = int(os.environ.get("DRAKVEX_BULK_CAP", "10000"))
 
 # live progress edit cadence for bulk — Telegram tolerates ~1 edit/sec/chat.
