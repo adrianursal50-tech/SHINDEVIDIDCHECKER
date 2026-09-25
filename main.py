@@ -40,7 +40,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # ── CONFIG ──────────────────────────────────────────────────────────
 BOT_TOKEN    = os.environ.get("MLBB_BOT_TOKEN", "8702549007:AAGNiI_-iZyzzKE4OHafSwgl3SjR0Ht3VRM")
-ALLOWED_USERS: set = set(8621676055)            # empty = open to everyone
+ALLOWED_USERS: set = {8621676055}        # single-user allowlist            # empty = open to everyone
 WORKERS      = int(os.environ.get("MLBB_WORKERS", "8"))
 API          = "https://api.telegram.org/bot" + BOT_TOKEN
 
