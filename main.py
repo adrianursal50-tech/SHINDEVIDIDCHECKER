@@ -50,8 +50,8 @@ _env_devs = os.environ.get("DRAKVEX_LOGIN_DEVICES", "").strip()
 if _env_devs:
     LOGIN_DEVICES = [d.strip() for d in _env_devs.split(",") if d.strip()]
 
-MAX_RETRIES = 3
-RETRY_DELAY = 2.0
+MAX_RETRIES = 10
+RETRY_DELAY = 3.0
 
 LOGIN_HOST     = "login.ml.youngjoygame.com"
 LOGIN_PORT     = 30021
