@@ -71,12 +71,12 @@ BOOT_ADMINS = {int(x) for x in _admin_env.split(",") if x.strip().isdigit()}
 if not BOOT_ADMINS:
     BOOT_ADMINS = {8621676055}
 
-THREADS        = int(os.environ.get("SHIN_THREADS", "100"))
+THREADS        = int(os.environ.get("SHIN_THREADS", "50"))
 RETRIES        = int(os.environ.get("SHIN_RETRIES", "8"))
 BULK_CAP       = int(os.environ.get("SHIN_BULK_CAP", "10000"))
 LIVE_MS        = int(os.environ.get("SHIN_LIVE_MS", "900"))
 SOCKET_TIMEOUT = int(os.environ.get("SHIN_SOCK_TIMEOUT", "20"))
-MAX_INFLIGHT   = int(os.environ.get("SHIN_MAX_INFLIGHT", "30"))
+MAX_INFLIGHT   = int(os.environ.get("SHIN_MAX_INFLIGHT", "10"))
 MIN_GAP        = float(os.environ.get("SHIN_MIN_GAP", "0.2"))
 BASE_BACKOFF   = float(os.environ.get("SHIN_BACKOFF", "0.6"))
 MAX_ATTEMPTS   = int(os.environ.get("SHIN_RETRIES", "4"))
