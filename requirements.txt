@@ -11,6 +11,7 @@ zstandard==0.23.0
 pycryptodome==3.21.0
 colorama
 requests
+curl_cffi
 
 # ── Proxy transport ────────────────────────────────────────────────
 # Optional SOCKS5 / SOCKS4 support. HTTP CONNECT works without it.
