@@ -1,5 +1,19 @@
-python-telegram-bot[rate-limiter]==20.8
+# shin_bot.py — runtime requirements
+# Target: Python 3.13 (works on 3.11 / 3.12 too)
+
+# ── Telegram bot framework ──────────────────────────────────────────
+# >=20.8 required: 20.7 has the Updater.__slots__ bug that crashes
+# on Python 3.13. <21 keeps the 20.x API surface stable.
+python-telegram-bot[rate-limiter]>=20.8,<21
+
+# ── Wire protocol ───────────────────────────────────────────────────
 zstandard==0.23.0
 pycryptodome==3.21.0
+
+# ── Proxy transport ────────────────────────────────────────────────
+# Optional SOCKS5 / SOCKS4 support. HTTP CONNECT works without it.
 pysocks==1.7.1
-httpx==0.27.2
+
+# httpx is NOT pinned here — python-telegram-bot 20.8 depends on
+# httpx~=0.26.0 and pinning 0.27.x breaks the resolver. Let PTB
+# pull its own compatible version.
