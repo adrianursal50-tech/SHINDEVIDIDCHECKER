@@ -50,9 +50,9 @@ BOOT_ADMINS = {int(x) for x in _admin_env.split(",") if x.strip().isdigit()}
 if not BOOT_ADMINS:
     BOOT_ADMINS = {8621676055}
 
-THREADS            = int(os.environ.get("DRAKVEX_THREADS", "100"))
-MAX_RETRIES        = int(os.environ.get("DRAKVEX_RETRIES", "8"))
-PROXY_ROTATE_EVERY = int(os.environ.get("DRAKVEX_PROXY_ROTATE_EVERY", "3"))
+THREADS            = int(os.environ.get("DRAKVEX_THREADS", "50"))
+MAX_RETRIES        = int(os.environ.get("DRAKVEX_RETRIES", "10"))
+PROXY_ROTATE_EVERY = int(os.environ.get("DRAKVEX_PROXY_ROTATE_EVERY", "2"))
 BULK_CAP           = int(os.environ.get("DRAKVEX_BULK_CAP", "10000"))
 LIVE_MS            = int(os.environ.get("DRAKVEX_LIVE_MS", "900"))
 PROXY_COOLDOWN     = int(os.environ.get("DRAKVEX_PROXY_COOLDOWN", "90"))
