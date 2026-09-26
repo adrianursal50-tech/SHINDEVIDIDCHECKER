@@ -9,6 +9,7 @@ python-telegram-bot[rate-limiter]>=20.8,<21
 # ── Wire protocol ───────────────────────────────────────────────────
 zstandard==0.23.0
 pycryptodome==3.21.0
+colorama
 
 # ── Proxy transport ────────────────────────────────────────────────
 # Optional SOCKS5 / SOCKS4 support. HTTP CONNECT works without it.
